@@ -1,2 +1,32 @@
-﻿// See https://aka.ms/new-console-template for more information
-Console.WriteLine("Hello, World!");
+﻿using System;
+
+
+bool start = true;
+
+while(start){
+    Console.WriteLine("Please select the action you want to do");
+    Console.WriteLine("*******************************************");
+    Console.WriteLine("(1) List the board");
+    Console.WriteLine("(2) Add card to board");
+    Console.WriteLine("(3) Delete card from board");
+    Console.WriteLine("(4) Replace the card");
+
+    int selection = Convert.ToInt16(Console.ReadLine());
+    switch(selection){
+        case 1:
+            //TODO List board
+            break;
+        case 2:
+            //TODO Add card
+            break;
+        case 3:
+            //TODO Delete card
+            break;
+        case 4:
+            //TODO Replace card
+            break;
+    }
+    Console.WriteLine("Do you want to take another action? (y/n)");
+    start = Console.ReadLine() == "y" ? true : false;
+}
+    
