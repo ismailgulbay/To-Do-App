@@ -3,14 +3,11 @@ using System;
 
 namespace ToDo.Datas;
 
-
-
-
 public class Database{
 
-    private static List<Person> _PersonList;
+    public static List<Person> _PersonList;
 
-    private static List<Cards> _CardList;
+    public static List<Cards> _CardList;
 
     static Database(){
         _PersonList = new List<Person>{
@@ -22,7 +19,8 @@ public class Database{
         _CardList = new List<Cards>{
             new Cards(){Title = "Register Screen", Content = "Adding register screen to web.", Person = "İsmail", Size = "XS" , BoardType = "InProgress"},
             new Cards(){Title = "Mobile App", Content = "Create mobile app for Android.", Person = "Meric", Size = "M", BoardType = "ToDo"},
-            new Cards(){Title = "Test Platform", Content = "Create test platform wor web.", Person = "Alp", Size = "L", BoardType = "Done" }
+            new Cards(){Title = "Mobile Web", Content = "Create mobile web.", Person = "Gulbay", Size = "S", BoardType = "ToDo"},
+            new Cards(){Title = "Test Platform", Content = "Create test platform wor web.", Person = "Alp", Size = "XL", BoardType = "Done" }
 
         };
 

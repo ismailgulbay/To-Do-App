@@ -1,4 +1,5 @@
 ﻿using System;
+using ToDo.Operations;
 
 
 bool start = true;
@@ -15,6 +16,7 @@ while(start){
     switch(selection){
         case 1:
             //TODO List board
+            ListingOperation.Listing();
             break;
         case 2:
             //TODO Add card
