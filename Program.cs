@@ -20,6 +20,7 @@ while(start){
             break;
         case 2:
             //TODO Add card
+            AddingOperation.Adding();
             break;
         case 3:
             //TODO Delete card
