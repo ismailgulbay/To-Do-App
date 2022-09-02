@@ -24,6 +24,7 @@ while(start){
             break;
         case 3:
             //TODO Delete card
+            DeletingOperation.Delete();
             break;
         case 4:
             //TODO Replace card
