@@ -28,6 +28,7 @@ while(start){
             break;
         case 4:
             //TODO Replace card
+            MovingOperation.Move();
             break;
     }
     Console.WriteLine("Do you want to take another action? (y/n)");
