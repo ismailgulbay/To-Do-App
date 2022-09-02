@@ -21,9 +21,17 @@ public class AddingOperation{
         Sizes size = (Sizes)Convert.ToInt16(Console.ReadLine());
         newCard.Size = Convert.ToString(size);
 
-        Console.Write("Choose person                              : ");
-        Console.ReadLine();
-        //TODO
+        Console.Write("Enter person ID                            : ");
+        string? personId = Console.ReadLine();
+        var person = Database._PersonList.FirstOrDefault(x => x.ID == personId);
+
+        if(person != null){
+            newCard.Person = person.Name;
+            newCard.BoardType = "ToDo";
+            Database._CardList.Add(newCard);
+        }
+        else Console.WriteLine("User with this ID not found.");
+        
     }
 
     enum Sizes
