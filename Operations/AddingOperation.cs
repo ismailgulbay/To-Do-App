@@ -19,7 +19,6 @@ public class AddingOperation{
 
         Console.Write("Choose size -> XS(1),S(2),M(3),L(4),XL(5)  : ");
         Sizes size = (Sizes)Convert.ToInt16(Console.ReadLine());
-        Console.WriteLine("DENEME");
         newCard.Size = Convert.ToString(size);
 
         Console.Write("Enter person ID                            : ");
